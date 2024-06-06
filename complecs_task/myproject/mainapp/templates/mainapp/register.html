@@ -1,0 +1,18 @@
+{% extends 'wrapper.html' %}
+{% block content %}
+{% load static %}
+<div class="form d-flex justify-content-center flex-column align-items-center">
+<h1>Регистрация</h1>
+<p>Быстро и легко.</p>
+    <div class="d-flex justify-content-center align-items-center">
+    </div>
+    <div class="bg-dark w-25">
+<form action="" method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="text" name="username" placeholder="Логин" class="bg-gradient">
+    <input type="password" name="password" placeholder="Пароль" class="bg-gradient">
+    <input type="submit" value="Register" class="bg-gradient bg-light text-black">
+</form>
+    </div>
+</div>
+{% endblock %}

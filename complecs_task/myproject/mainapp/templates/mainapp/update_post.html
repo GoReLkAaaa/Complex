@@ -1,0 +1,16 @@
+{% extends 'wrapper_2.html' %}
+{% block content %}
+{% load static %}
+{% load thumbnail %}
+<div class="post">
+<img src="{{ publications.image|thumbnail_url:'publication' }}">
+<div class="d-flex flex-column justify-content-center align-items-center">
+    <form action="" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="text" name="name" placeholder="Напишите название поста" class="bg-gradient text-black qaz" value="{{ publications.name }}">
+        <input type="file" name="image" placeholder="Выберите картинку" class="bg-gradient">
+        <input type="submit" value="Отправить" class="bg-gradient">
+    </form>
+</div>
+</div>
+{% endblock %}

@@ -1,0 +1,97 @@
+h1{
+    color: rgba(0, 0, 0, 0.89);
+}
+
+body{
+    background-color: rgba(152, 152, 152, 0.89);
+}
+
+.form{
+    height: 560px;
+}
+
+.form form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.form input{
+    margin: 20px;
+    width: 200px;
+    height: 50px;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.p{
+    font-size: 20px;
+    border-bottom: solid black 1px;
+}
+
+.index{
+        height: 1000px;
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 430px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.status{
+    color: #34ce57;
+}
+
+.a{
+    font-size: 30px;
+}
+
+.icon{
+  height: 430px;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+.publications{
+    height: 1000px;
+}
+
+.detail{
+        height: 530px;
+}
+
+.create{
+    height: 1000px;
+}
+
+.qaz{
+    width: 220px;
+    height: 50px;
+}
+
+.vbn{
+    margin: 50px;
+}
+
+.post{
+    height: 1000px;
+}

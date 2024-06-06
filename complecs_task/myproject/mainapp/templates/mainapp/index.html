@@ -1,0 +1,20 @@
+{% extends 'wrapper_2.html' %}
+{% block content %}
+{% load static %}
+<div class="index">
+    <div class="d-flex justify-content-center align-items-center">
+     <a href="{% url 'publications' %}" class="a navbar-brand bg-light" aria-current="page">Публикации</a>
+    </div>
+<div class="profile bg-light ">
+    {% if not user.profiles.icon %}
+    <img src="{% static 'img/profile.jpg' %}" width="200px">
+    <a href="{% url 'icon' user.id %}" class="navbar-collapse" aria-current="page">Новый аватар</a>
+    {% else %}
+    <img src="{{ user.profiles.icon.url }}" width="200px">
+    {% endif %}
+    <h1>Имя: {{ request.user.username }}</h1>
+    <p class="status">Статус: В сети</p>
+    <a href="{% url 'logout' %}">Выйти</a>
+</div>
+</div>
+{% endblock %}

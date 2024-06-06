@@ -1,0 +1,14 @@
+{% extends 'wrapper_2.html' %}
+{% block content %}
+{% load static %}
+<div class="icon">
+<div class="d-flex flex-column justify-content-center align-items-center">
+    <form action="" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="file" name="icon" placeholder="Выберите картинку">
+        <input type="submit">
+    </form>
+<a href="{% url 'index' %}" class="a navbar-brand bg-light">Назад</a>
+</div>
+</div>
+{% endblock %}
